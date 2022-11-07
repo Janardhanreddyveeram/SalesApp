@@ -1,0 +1,34 @@
+﻿@model ProductModel
+@{
+    ViewData["Title"] = "Edit";
+}
+@*
+@if (TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+}
+<partial name="_Notification" />*@
+
+<from method="post" asp-action="Edit">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Product</h2>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Brand"></label>
+            <input asp-for="Brand" class="from-control">
+            <span asp-validation-for="Brand" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="from-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        @*<a asp-action="Edit" asp-controller="Products" asp-route-id="@Model.ProductId" class="btn btn-primary" style="width:150px">Update</a></a>*@
+        <button class="btn btn-primary" style="width:150px">Save updates</button>
+        &nbsp;&nbsp;
+        <a asp-action="Index" asp-controller="products" class="btn btn-secondary" style="width:150px">Back to List</a>
+    </div>
+</from>
+

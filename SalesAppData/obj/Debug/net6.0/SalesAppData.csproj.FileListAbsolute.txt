@@ -1,0 +1,17 @@
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesAppData.deps.json
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesAppData.runtimeconfig.json
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesAppData.dll
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesAppData.pdb
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesApp.Core.dll
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\bin\Debug\net6.0\SalesApp.Core.pdb
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.csproj.AssemblyReference.cache
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.AssemblyInfoInputs.cache
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.AssemblyInfo.cs
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.csproj.CoreCompileInputs.cache
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.csproj.CopyComplete
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.dll
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\refint\SalesAppData.dll
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.pdb
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\SalesAppData.genruntimeconfig.cache
+C:\Users\VeeramJ\Documents\Sample Test Project\SalesAppData\obj\Debug\net6.0\ref\SalesAppData.dll
