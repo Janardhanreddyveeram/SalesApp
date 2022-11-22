@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\SalesApp",
-    "\\SalesAppData",
-    "\\SalesAppData\\Repositories"
+    ""
   ],
-  "SelectedNode": "\\SalesAppData\\Repositories\\ProductRepository.cs",
+  "SelectedNode": "\\SalesApp.sln",
   "PreviewInSolutionExplorer": false
 }

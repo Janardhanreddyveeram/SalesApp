@@ -1,24 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesApp.Models;
 using SalesApp.Services;
+using SalesAppData.Repositories.Base;
 
 namespace SalesApp.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly IProductHttpService _productHttpService;        
+        private readonly IProductHttpService _productHttpService;
         private readonly ILogger<ProductsController> _logger;
         //private readonly IUnitOfWork unitOfWork;
         //private readonly IMapper _mapper;
-        public ProductsController(ILogger<ProductsController> logger, IProductHttpService productHttpService)
+        public ProductsController(ILogger<ProductsController> logger/*, IUnitOfWork unitOfWork*/, IProductHttpService productHttpService)
+        //public ProductsController(ILogger<ProductsController> logger, IUnitOfWork unitOfWork)
         {
+            _logger = logger; 
             _productHttpService = productHttpService;
-            _logger = logger;            
+            //this.unitOfWork = unitOfWork;
+
         }
 
         public async Task<IActionResult> Index()
         {
             var result = await _productHttpService.GetAllAsync();
+            //var result = await unitOfWork.ProductService.GetAllAsync();
             return View(result.Record);
         }
         [HttpGet]
@@ -30,7 +35,8 @@ namespace SalesApp.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductModel product)
         {
-            var response = await _productHttpService.AddAsync(product);            
+            var response = await _productHttpService.AddAsync(product);
+            //var response = await unitOfWork.ProductService.AddAsync(product);
             if (response.ResponseCode == System.Net.HttpStatusCode.Created)
             {
                 TempData["success"] = response.Message;
@@ -51,7 +57,6 @@ namespace SalesApp.Controllers
             }
             else
             {
-
                 var response = await _productHttpService.GetAsync(id.Value);
 
                 if (response.ResponseCode == System.Net.HttpStatusCode.Found)
@@ -63,7 +68,6 @@ namespace SalesApp.Controllers
                 {
                     TempData["error"] = response.Message;
                     return NotFound();
-
                 }
             }
         }
@@ -95,7 +99,6 @@ namespace SalesApp.Controllers
             {
                 return NotFound();
             }
-
             var response = await _productHttpService.GetAsync(id.Value);
             if (response.ResponseCode == System.Net.HttpStatusCode.Found)
             {

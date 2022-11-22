@@ -12,3 +12,17 @@ C:\Users\VeeramJ\Documents\Sample Test Project\SalesApp.Core\obj\Debug\net6.0\Sa
 C:\Users\VeeramJ\Documents\Sample Test Project\SalesApp.Core\obj\Debug\net6.0\ref\SalesApp.Core.dll
 C:\Users\VeeramJ\Documents\Sample Test Project\SalesApp.Core\bin\Debug\net6.0\SalesApp.Core.runtimeconfig.json
 C:\Users\VeeramJ\Documents\Sample Test Project\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.genruntimeconfig.cache
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\bin\Debug\net6.0\SalesApp.Core.deps.json
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\bin\Debug\net6.0\SalesApp.Core.runtimeconfig.json
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\bin\Debug\net6.0\SalesApp.Core.dll
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\bin\Debug\net6.0\SalesApp.Core.pdb
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.csproj.AssemblyReference.cache
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.AssemblyInfoInputs.cache
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.AssemblyInfo.cs
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.dll
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\refint\SalesApp.Core.dll
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.pdb
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\SalesApp.Core.genruntimeconfig.cache
+C:\Users\VeeramJ\SalesApp\SalesApp.Core\obj\Debug\net6.0\ref\SalesApp.Core.dll

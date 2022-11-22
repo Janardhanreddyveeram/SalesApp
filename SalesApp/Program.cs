@@ -1,5 +1,7 @@
 using SalesApp.Models;
 using SalesApp.Services;
+using SalesAppData.Repositories;
+using SalesAppData.Repositories.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +21,7 @@ app.Run();
 static void ConfigureServices(WebApplicationBuilder builder)
 {
     builder.Services.Configure<ApiUrls>(builder.Configuration.GetSection(ApiUrls.API_URL_SECTION));
-    //builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
+    //builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
     builder.Services.AddSingleton<IProductHttpService, ProductHttpService>();
     //builder.Services.AddAutoMapper(typeof(ProductModelToProduct));
     //var conStr = builder.Configuration.GetConnectionString("SalesAppDb");
@@ -28,6 +30,7 @@ static void ConfigureServices(WebApplicationBuilder builder)
     //    {
     //        options.UseSqlServer(conStr);
     //    });
+
     builder.Services.AddControllersWithViews();
     //builder.Services.AddRazorPages();
     builder.Services.AddHttpClient();

@@ -13,10 +13,10 @@ namespace SalesApp.Models
         
         public string Description { get; set; }
         [Required]
-        [Display(Name = "Price")]
+        [Display(Name = "Receiving Price")]
         public decimal ReceivingPrice { get; set; }
         [Required]
-        [Display(Name = "Price=>1-50")]
+        [Display(Name = "Selling Price")]
         public decimal Price { get; set; }
         [Required]
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;

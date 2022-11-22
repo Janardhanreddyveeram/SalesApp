@@ -6,15 +6,15 @@ namespace SalesApp.Services
 {
     public class ProductHttpService : IProductHttpService
     {
-        private readonly IOptions<ApiUrls> apiRuls;
+        private readonly IOptions<ApiUrls> apiUrls;
         private readonly ILogger<ProductHttpService> logger;
         private readonly string productApiUrl;
 
-        public ProductHttpService(IOptions<ApiUrls> apiRuls, ILogger<ProductHttpService> logger)
+        public ProductHttpService(IOptions<ApiUrls> apiUrls, ILogger<ProductHttpService> logger)
         {
-            this.apiRuls = apiRuls;
+            this.apiUrls = apiUrls;
             this.logger = logger;
-            productApiUrl = apiRuls.Value.ProductApiUrl;
+            productApiUrl = apiUrls.Value.ProductApiUrl;
         }
 
         public async Task<ApiResponseModel<ProductModel>> AddAsync(ProductModel productModel)
@@ -29,7 +29,7 @@ namespace SalesApp.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<ProductModel>> DeleteAsync(int? id)
+        public async Task<ApiResponseModel<ProductModel>> DeleteAsync(int id)
         {
             var url = $"{productApiUrl}/{id}";
             ApiResponseModel<ProductModel> response = null;
@@ -52,7 +52,7 @@ namespace SalesApp.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<ProductModel>> GetAsync(int? id)
+        public async Task<ApiResponseModel<ProductModel>> GetAsync(int id)
         {
             var url = $"{productApiUrl}/{id}";
             ApiResponseModel<ProductModel> response = null;
@@ -68,7 +68,7 @@ namespace SalesApp.Services
             ApiResponseModel<ProductModel> response = null;
             using (var client = new HttpClient())
             {
-                var httpResponse = await client.PostAsJsonAsync<ProductModel>(productApiUrl, product);
+                var httpResponse = await client.PutAsJsonAsync<ProductModel>(productApiUrl, product);
                 var result = await httpResponse.Content.ReadAsStringAsync();
                 response = JsonConvert.DeserializeObject<ApiResponseModel<ProductModel>>(result);
             }

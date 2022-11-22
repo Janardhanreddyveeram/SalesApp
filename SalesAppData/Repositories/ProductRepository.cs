@@ -3,6 +3,7 @@ using SalesApp.Core.Repositories;
 using SalesAppData.Data;
 using SalesAppData.Repositories.Base;
 
+
 namespace SalesAppData.Repositories
 {
     public class ProductRepository : Repository<Product>, IProductRepository
